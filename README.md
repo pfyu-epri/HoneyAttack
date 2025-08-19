@@ -3,8 +3,8 @@ Implementation of DLA and CUA attacks against the HoneyIndex honeyword scheme.
 
 This repository contains the official source code, evaluation scripts, and data for the paper:
 
-**Attack HoneyIndex with Little Probability to Be Caught**
-*[Link to your paper PDF, e.g., on ArXiv or your university page]*
+**When Updates Become a Vulnerability: Novel Attacks on the HoneyIndex Scheme**
+*[Link to the paper]*
 
 ---
 
