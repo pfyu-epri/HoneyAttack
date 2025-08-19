@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    double Q[4] = {0.101165, 0.004477, 0.00383, 0.001136};
+	double scp = 1.0 ;
+	int i;
+	for(i=0; i<4; i++)
+	{
+		scp = scp * (1-Q[i]);
+	}
+	
+	scp = 1.0 -scp;
+	
+    printf("SCP=%f\n", scp);
+}

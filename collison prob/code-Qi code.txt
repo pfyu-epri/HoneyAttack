@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int N, ni, i;
+	double nQi, fz, fm, dN, dni;
+    //N = 2987;
+    //ni = 14;
+	dN = 30233633.0;
+	dni = 1203299.0;
+	fz = dN + 20.0 * dni - 19.0;
+	fm = dN - 19.0;
+	nQi = fz/fm;
+	fz = dN - dni;
+	fm = dN;
+	for(i=0; i<19;i++)
+	{ nQi = nQi*fz/fm;
+	  fz = fz - 1.0;
+	  fm = fm - 1.0;
+	}
+	printf("nQi=%f,  ",nQi);
+	printf("Qi=%f\n",1.0-nQi);
+	
+	return 0;
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+	long N[15], ni[15], i, t, j;
+	double nQi, fz, fm, dN, dni;
+    N[] = {31031779,16283141,4510005,32603388,15271670,41545,16250,9755,2987,4929090,3723514,1261810,13,14,15};
+    ni[] = {1198249,68895,163486,290729,24860,75,221,53,89,47799,87171,39177,13,14,15};
+	for(j=0; j<12; j++){
+	t = ni[j] - 1;
+	dN = N[j];
+	dni = ni[j];
+	fz = dN + 19.0 * dni - 19.0;
+	fm = dN - dni + 1.0;
+	nQi = fz/fm;
+	fz = dN - 20.0;
+	fm = dN;
+	for(i=0; i<t; i++)
+	{ nQi = nQi*fz/fm;
+	  fz = fz - 1.0;
+	  fm = fm - 1.0;
+	}
+	printf("newSCP_nQ%d=%f,  ", j+1, nQi);
+	printf("SCP%d=%f\n\n",j+1, 1.0-nQi);
+	}
+	
+	return 0;
+}
